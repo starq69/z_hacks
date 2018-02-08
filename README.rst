@@ -11,15 +11,9 @@ z_hacks
 
 zipline bundles hacks
 
-Usage
------
-
-Installation
-------------
-
-Requirements
-^^^^^^^^^^^^
-
+What
+----
+These are just a little bunch of annotations over zipline ingest internals.
 Compatibility
 -------------
 
