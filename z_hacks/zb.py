@@ -1,4 +1,6 @@
-def ingest(name,
+bundles = {'test': 'ready'}    #####
+
+def ingest(name='test',
            environ=os.environ,
            timestamp=None,
            assets_versions=(),
@@ -28,9 +30,14 @@ def ingest(name,
     pth.ensure_directory(pth.data_path([name, timestr], environ=environ))
     pth.ensure_directory(cachepath)
     """
-    with dataframe_cache(cachepath, clean_on_failure=False) as cache, \
-            ExitStack() as stack:
+
+
+    with dataframe_cache(cachepath, clean_on_failure=False) as cache, ExitStack() as stack:
+
         if bundle.create_writers:
+
+            print('bundle.create_writers : OK')
+            '''
             wd = stack.enter_context(working_dir(
                 pth.data_path([], environ=environ))
             )
@@ -45,6 +52,7 @@ def ingest(name,
                 start_session,
                 end_session,
             )
+            '''
             # Do an empty write to ensure that the daily ctables exist
             # when we create the SQLiteAdjustmentWriter below. The
             # SQLiteAdjustmentWriter needs to open the daily ctables so
