@@ -11,14 +11,16 @@ z_hacks
 
 zipline bundles hacks
 
-Usage
+What
+----
+These are just a little bunch of annotations over zipline ingest internals.
+
+Scope
 -----
+Understand how can be set zipline whith an RT data feed.
 
-Installation
-------------
+Tanks for wathing and [...]!
 
-Requirements
-^^^^^^^^^^^^
 
 Compatibility
 -------------
