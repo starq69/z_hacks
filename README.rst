@@ -15,6 +15,13 @@ What
 ----
 These are just a little bunch of annotations over zipline ingest internals.
 
+Scope
+-----
+Understand how can be set zipline whith an RT data feed.
+
+Tanks for wathing and [...]!
+
+
 Compatibility
 -------------
 
