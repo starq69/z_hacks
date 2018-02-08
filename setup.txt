@@ -21,4 +21,7 @@ git add *
 git add .gitignore 
 git commit -m 'cookiecutter generated'
 
+create "z_hacks" github repo
 
+git remote add origin https://github.com/starq69/z_hacks.git
+git push -u origin master
